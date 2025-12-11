@@ -1,0 +1,68 @@
+:root {
+    /* Cores */
+    --primary-color: #f0b96e;
+    --secundary-color: #d8953a;
+    --White-color: #ffffff;
+    
+    /* Parametros */
+    --border-radius-btn: 15px;
+}
+
+body {
+    background-color: var(--primary-color);
+    font-family: "Chau Philomene One", sans-serif;
+    color: var(--White-color);
+}
+
+header .navbar-light .navbar-nav .nav-link.active {
+    color: var(--White-color) !important;
+}
+
+.sec-One {
+    height: 80dvh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.sec-One h1 {                
+    color: #fff;
+    position: relative; 
+    top: 120px;
+    left: 18px;
+}
+
+.float-animation {
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-15px); /* sobe */
+    }
+    100% {
+        transform: translateY(0); /* volta */
+    }
+}     
+
+.sec-One .btn {
+    position: relative;
+    bottom: 85px;
+    left: 20px;
+    background: var(--secundary-color);
+    color: var(--White-color);
+    font-size: 25px;
+    border-radius: var(--border-radius-btn);
+}
+
+.sec-One button a {    
+    color: var(--White-color);
+}
+
+.sec-One button a:hover {    
+    text-decoration: none;
+}
